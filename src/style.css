@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.game-board {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  border: 2px green solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  animation: pipe-animation 2s linear infinite;
+  height: 100px;
+  width: 80px;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
