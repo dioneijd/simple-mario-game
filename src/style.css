@@ -63,3 +63,21 @@
     bottom: 0;
   }
 }
+
+.clouds {
+  position: absolute;
+  height: 120px;
+  width: 260px;
+  right: -260px;
+  animation: clouds-x-movement 10s linear infinite;
+}
+
+@keyframes clouds-x-movement {
+  from {
+    right: -260;
+  }
+
+  to {
+    right: 100%;
+  }
+}
