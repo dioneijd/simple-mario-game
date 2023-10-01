@@ -8,6 +8,7 @@
   width: 800px;
   height: 400px;
   margin: auto;
+  margin-top: 100px;
   border: 2px green solid;
   position: relative;
   overflow: hidden;
@@ -17,6 +18,7 @@
   position: absolute;
   bottom: 0;
   animation: pipe-animation 2s linear infinite;
+  /* left: 80px; */
   height: 100px;
   width: 80px;
 }
@@ -34,7 +36,7 @@
 .mario {
   position: absolute;
   height: 120px;
-  bottom: 0;
+  bottom: 0px;
 }
 
 .mario-jump {
@@ -68,6 +70,7 @@
   position: absolute;
   height: 120px;
   width: 260px;
+  top: 20px;
   right: -260px;
   animation: clouds-x-movement 10s linear infinite;
 }
@@ -80,4 +83,18 @@
   to {
     right: 100%;
   }
+}
+
+
+#divMario {
+  position: absolute;
+  border: 1px green solid;
+}
+
+#divPipe {
+  position: absolute;
+  border: 1px red solid;
+  height: 10px;
+  width: 10px;
+  
 }
